@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "Rich.VirtualAssistant": {
+      "path": "Rich.VirtualAssistant.abpmdl.json"
+    }
+  }
+}

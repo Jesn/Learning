@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Rich.VirtualAssistant.Domain.Shared": {
+      "path": "src/Rich.VirtualAssistant.Domain.Shared/Rich.VirtualAssistant.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.Domain": {
+      "path": "src/Rich.VirtualAssistant.Domain/Rich.VirtualAssistant.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.Application.Contracts": {
+      "path": "src/Rich.VirtualAssistant.Application.Contracts/Rich.VirtualAssistant.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.Application": {
+      "path": "src/Rich.VirtualAssistant.Application/Rich.VirtualAssistant.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.EntityFrameworkCore": {
+      "path": "src/Rich.VirtualAssistant.EntityFrameworkCore/Rich.VirtualAssistant.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.MongoDB": {
+      "path": "src/Rich.VirtualAssistant.MongoDB/Rich.VirtualAssistant.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.HttpApi": {
+      "path": "src/Rich.VirtualAssistant.HttpApi/Rich.VirtualAssistant.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.HttpApi.Client": {
+      "path": "src/Rich.VirtualAssistant.HttpApi.Client/Rich.VirtualAssistant.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Rich.VirtualAssistant.TestBase": {
+      "path": "test/Rich.VirtualAssistant.TestBase/Rich.VirtualAssistant.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "Rich.VirtualAssistant.EntityFrameworkCore.Tests": {
+      "path": "test/Rich.VirtualAssistant.EntityFrameworkCore.Tests/Rich.VirtualAssistant.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Rich.VirtualAssistant.MongoDB.Tests": {
+      "path": "test/Rich.VirtualAssistant.MongoDB.Tests/Rich.VirtualAssistant.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Rich.VirtualAssistant.Domain.Tests": {
+      "path": "test/Rich.VirtualAssistant.Domain.Tests/Rich.VirtualAssistant.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Rich.VirtualAssistant.Application.Tests": {
+      "path": "test/Rich.VirtualAssistant.Application.Tests/Rich.VirtualAssistant.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Rich.VirtualAssistant.HttpApi.Host": {
+      "path": "host/Rich.VirtualAssistant.HttpApi.Host/Rich.VirtualAssistant.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Rich.VirtualAssistant.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Rich.VirtualAssistant.HttpApi.Client.ConsoleTestApp/Rich.VirtualAssistant.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "Rich.VirtualAssistant.AuthServer": {
+      "path": "host/Rich.VirtualAssistant.AuthServer/Rich.VirtualAssistant.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "Rich.VirtualAssistant.Host.Shared": {
+      "path": "host/Rich.VirtualAssistant.Host.Shared/Rich.VirtualAssistant.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

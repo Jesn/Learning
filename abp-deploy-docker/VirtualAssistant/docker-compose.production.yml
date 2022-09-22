@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  rich-authserver:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    
+  rich-virtualassistant:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

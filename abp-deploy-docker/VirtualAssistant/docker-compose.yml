@@ -1,0 +1,49 @@
+version: '3.4'
+
+services:
+  rich-nginx:
+    image: nginx
+    container_name: rich-nginx
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - docker/nginx/cert:/etc/nginx/cert
+      - docker/nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - public
+    depends_on:
+      - rich-authserver
+      - rich-virtualassistant
+    
+  rich-authserver:
+    image: rich/rich-authserver
+    container_name: rich-authserver
+    build:
+      context: .
+      dockerfile: host/Rich.VirtualAssistant.AuthServer/Dockerfile
+    environment:
+      - TZ=Asia/Shanghai
+      - ASPNETCORE_URLS=http://+:80
+      - App__SelfUrl=https://rich-authserver
+    networks:
+      - public
+
+  rich-virtualassistant:
+    image: rich/rich-virtualassistant
+    container_name: rich-virtualassistant
+    build:
+      context: .
+      dockerfile: host/Rich.VirtualAssistant.HttpApi.Host/Dockerfile
+    environment:
+      - TZ=Asia/Shanghai
+      - ASPNETCORE_URLS=http://+:80
+      - App__SelfUrl=https://rich-virtualassistant
+       # AuthServer__Authority这里必须填写公网地址,否则在swagger的‘Available authorizations’弹框页面展示的’Authorization URL‘访问不了
+      - AuthServer__Authority=https://auth.sample.com 
+      - AuthServer__RequireHttpsMetadata=true
+    networks:
+      - public
+
+networks:
+  public:
+    external: true

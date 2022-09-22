@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Rich.VirtualAssistant</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="6.0.0-rc.2" />
+    <ProjectReference Include="..\Rich.VirtualAssistant.Domain.Shared\Rich.VirtualAssistant.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
